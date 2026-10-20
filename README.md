@@ -8,7 +8,7 @@ Each driver package lives in `drivers/<device-or-vendor>/`.
 
 | Device | Folder | What it does |
 | --- | --- | --- |
-| Shelly BLU H&T ZB (SBHT-203C) | [drivers/Shelly_BLU_H%26T_ZB](drivers/Shelly_BLU_H%26T_ZB) | Temperature, humidity and battery for the battery-powered Zigbee sensor. Includes the Simple driver (everyday use), the Reference driver (configurable reporting, diagnostics). Install via Hubitat Package Manager or import the `.groovy` files directly. |
+| Shelly BLU H&T ZB (SBHT-203C) | [drivers/Shelly_BLU_H&T_ZB](drivers/Shelly_BLU_H%26T_ZB) | Temperature, humidity and battery for the battery-powered Zigbee sensor. Includes the Simple driver (everyday use), the Reference driver (configurable reporting, diagnostics). Install via Hubitat Package Manager or import the `.groovy` files directly. |
 
 See the package's [README](drivers/Shelly_BLU_H%26T_ZB/README.md) for pairing steps, install instructions and the list of files.
 
