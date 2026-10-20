@@ -1,0 +1,19 @@
+{
+  "packageName": "Aqara DJT11LM Vibration Sensor",
+  "author": "Karl Lohner",
+  "minimumHEVersion": "2.3.9",
+  "dateReleased": "2026-10-20",
+  "version": "1.0.0",
+  "releaseNotes": "First release. Aqara Vibration Sensor DJT11LM driver 4.0.1 (motion, tilt, drop, optional contact, sensitivity with confirmed sync, online/offline health). Documentation: https://github.com/klohner/hubitat/tree/main/drivers/Aqara_DJT11LM_Vibration_Sensor",
+  "documentationLink": "https://github.com/klohner/hubitat/tree/main/drivers/Aqara_DJT11LM_Vibration_Sensor",
+  "drivers": [
+    {
+      "id": "31d224f2-3b9c-475c-b7ee-d92e0d93cf05",
+      "name": "Aqara Vibration Sensor DJT11LM",
+      "namespace": "klohner",
+      "location": "https://raw.githubusercontent.com/klohner/hubitat/main/drivers/Aqara_DJT11LM_Vibration_Sensor/Aqara_DJT11LM_Vibration_Sensor.groovy",
+      "required": true,
+      "version": "4.0.1"
+    }
+  ]
+}

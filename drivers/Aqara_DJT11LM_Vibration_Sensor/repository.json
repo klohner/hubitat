@@ -1,0 +1,19 @@
+{
+  "author": "Karl Lohner",
+  "website": "https://github.com/klohner/hubitat/tree/main/drivers/Aqara_DJT11LM_Vibration_Sensor",
+  "githubUrl": "https://github.com/klohner/hubitat",
+  "packages": [
+    {
+      "name": "Aqara DJT11LM Vibration Sensor",
+      "category": "Drivers",
+      "location": "https://raw.githubusercontent.com/klohner/hubitat/main/drivers/Aqara_DJT11LM_Vibration_Sensor/packageManifest.json",
+      "description": "Hubitat driver for the Aqara Vibration Sensor DJT11LM (lumi.vibration.aq1): motion, tilt, drop, optional contact, sensitivity and health.",
+      "tags": [
+        "Zigbee",
+        "Vibration",
+        "Aqara",
+        "Motion"
+      ]
+    }
+  ]
+}
