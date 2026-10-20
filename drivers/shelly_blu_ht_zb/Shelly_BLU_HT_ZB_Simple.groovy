@@ -84,7 +84,7 @@ import java.math.RoundingMode
 
 metadata {
     definition(name: 'Shelly BLU H&T ZB', namespace: 'klohner', author: 'Karl Lohner', singleThreaded: true,
-               importUrl: 'https://raw.githubusercontent.com/klohner/klohner.github.io/master/Hubitat/Shelly_BLU_H%26T_ZB/Shelly_BLU_HT_ZB_Simple.groovy') {
+               importUrl: 'https://raw.githubusercontent.com/klohner/hubitat/main/drivers/shelly_blu_ht_zb/Shelly_BLU_HT_ZB_Simple.groovy') {
         capability 'Sensor'
         capability 'TemperatureMeasurement'
         capability 'RelativeHumidityMeasurement'
