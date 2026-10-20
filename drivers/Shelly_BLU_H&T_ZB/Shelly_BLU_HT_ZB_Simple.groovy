@@ -795,7 +795,7 @@ private void sendItem(Map item, Map s) {
     }
 }
 
-// ---- command builders (library builders, 'delay' entries removed, one string per send; same forms as the proven Probe)
+// ---- command builders (library builders, 'delay' entries removed, one string per send)
 private String buildCmd(Map item) {
     int cl = Integer.parseInt(item.cluster as String, 16)
     String zid = device.zigbeeId
@@ -953,7 +953,7 @@ private void publishStatus() {
 
 private void initState() {
     if (state.drv != 'simple-1') {
-        // First run, or the device was switched from another driver (Reference, Probe): drop its jobs and state.
+        // First run, or the device was switched from another driver (Reference): drop its jobs and state.
         unschedule()
         state.clear()
         state.drv         = 'simple-1'

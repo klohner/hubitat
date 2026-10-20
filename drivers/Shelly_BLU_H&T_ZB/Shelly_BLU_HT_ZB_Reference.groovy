@@ -27,9 +27,6 @@
  *    - Device Data: the platform sets manufacturer, model, application, endpointId; this driver adds ieee, swBuildId, zclVersion,
  *      powerSource (decoded, e.g. "Battery") and batteryType (CR2032).
  *
- *  INSTALL NOTE: this driver sends commands to the sensor. Do not keep the Probe driver installed next to it when pairing a
- *  new unit (both match the same device).
- *
  *  Version history: 0.3 queue engine, 0.4 factory reset / battery replaced / health check, 0.5 interval menus, 0.6 Initialize /
  *  power source decoded / command help, 0.7 burst queue and factory-interval defaults, 0.8 Reset Reporting To Recommended.
  *
@@ -1164,7 +1161,7 @@ private void sendItem(Map item, Map s) {
     }
 }
 
-// ---- command builders (library builders, 'delay' entries removed, one string per send; same forms as the proven Probe)
+// ---- command builders (library builders, 'delay' entries removed, one string per send)
 private String buildCmd(Map item) {
     int cl = Integer.parseInt(item.cluster as String, 16)
     String zid = device.zigbeeId
@@ -1613,7 +1610,7 @@ private Map runEngineTests() {
 
 private void initState() {
     if (state.drv != 'ref-q2') {
-        // First run, or the device was switched from another driver (e.g. the Probe): drop its jobs and state.
+        // First run, or the device was switched from another driver: drop its jobs and state.
         unschedule()
         state.clear()
         state.drv     = 'ref-q2'
