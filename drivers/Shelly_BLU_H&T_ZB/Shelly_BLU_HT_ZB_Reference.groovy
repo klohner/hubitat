@@ -2,7 +2,7 @@
  *  Shelly BLU H&T ZB (SBHT-203C) - Reference driver
  *
  *  Full-featured driver for the battery-powered Zigbee sleepy end device Shelly BLU H&T ZB (temperature, humidity, battery).
- *  Documentation, protocol notes and the Simple driver: https://github.com/klohner/klohner.github.io/tree/master/Hubitat/Shelly_BLU_H%26T_ZB
+ *  Documentation, protocol notes and the Simple driver: https://github.com/klohner/hubitat/tree/main/drivers/Shelly_BLU_H%26T_ZB
  *
  *  FEATURES
  *    - Temperature, humidity (%RH) and battery (% and volts) with hub-side offsets.
@@ -116,7 +116,7 @@ import java.math.RoundingMode
 
 metadata {
     definition(name: 'Shelly BLU H&T ZB Reference', namespace: 'klohner', author: 'Karl Lohner', singleThreaded: true,
-               importUrl: 'https://raw.githubusercontent.com/klohner/hubitat/main/drivers/shelly_blu_ht_zb/Shelly_BLU_HT_ZB_Reference.groovy') {
+               importUrl: 'https://raw.githubusercontent.com/klohner/hubitat/main/drivers/Shelly_BLU_H%26T_ZB/Shelly_BLU_HT_ZB_Reference.groovy') {
         capability 'Sensor'
         capability 'TemperatureMeasurement'
         capability 'RelativeHumidityMeasurement'
