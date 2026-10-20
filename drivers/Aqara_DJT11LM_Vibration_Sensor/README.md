@@ -32,6 +32,11 @@ After a re-pair no tap is needed; the driver re-sends the value itself for about
 - Heartbeat interval, LED and other settings are not configurable on this model.
 - Contact position is refreshed only when the sensor reports (events, taps, hourly), not continuously.
 
-The driver's header comments describe the protocol and design in more detail.
+## Documentation
+
+- [DJT11LM_Technical_Reference.md](DJT11LM_Technical_Reference.md): configuration, calibration, health, driver internals and known limitations.
+- [zigbee_protocol_spec.md](zigbee_protocol_spec.md): the Zigbee messages, attributes and sleepy-device delivery the driver relies on.
+
+The driver's header comments also describe the design in brief.
 
 Licensed under the Apache License, Version 2.0.
