@@ -1,4 +1,4 @@
-# hubitat
+# Hubitat
 
 Hubitat stuff: custom device drivers and apps.
 
